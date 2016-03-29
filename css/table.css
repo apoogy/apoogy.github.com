@@ -1,0 +1,20 @@
+
+#page table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+#page table thead {
+  background: #444;
+  color: #fff;
+}
+#page table thead td {
+  cursor: pointer;
+  width: 120px;
+}
+#page table td {
+  padding: .5em 1em;
+}
+#page table tbody tr:nth-child(even) {
+  background: #ddd;
+}

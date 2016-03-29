@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/2000/svg">
+<head>
+<title>長瑒工程公司</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="results, PuLSIF" />
+<meta name="description" content="Results of PuLSIF" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/table.css" rel="stylesheet" type="text/css" />
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.min.js'></script>
+<!--<link href="css/blue.css" rel="stylesheet" type="text/css" />-->
+<script type="text/javascript">
+$(document).ready(function(){
+$.get("homepage.html",function(data){ //初始將about.html include div#page
+    $('div#page.container').html(data);
+}).fail(function() {
+    alert('Failed to load the page.'); // or whatever
+});
+
+$.get("menu.html",function(data){ //初始將about.html include div#page
+    $('div.menu').html(data);
+}) // or whatever
+});
+</script>
+</head>
+
+<!-- git clone https://github.com/pulsifwebsite/pulsifwebsite.github.com pulsifwebsite.github.com -->
+
+<body>
+<div id="logo">
+	<h1><a href="index.html" class="icon icon-group"><span>長瑒工程公司</span></a></h1>
+</div>
+
+<div id="header">
+	<div class="menu">
+
+	</div>
+</div>
+
+<div id="page-wrapper">
+	<div id="page" class="container">
+	<!-- Here for jQuery -->
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>長瑒工程公司&copy; All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+
+</html>
