@@ -2,7 +2,7 @@
     <br />
     <h2>Welcome to 長瑒</h2>
     <p>本公司提供各種空調工程服務、工程設備批發、機械安裝及保養</p>
-    <p><a class="button" href="about.html">關於我們</a></p>
+    <p><a class="button" href="#" onclick="clickEvent('about.html')">關於我們</a></p>
 </div>
 <div id="sidebar">
 <h2>最新消息:</h2>
@@ -34,3 +34,11 @@
     <li><a href="#">第二十五則</a></li>
 </ul>
 </div>
+<script type="text/javascript" src="js/jquery.table.js"></script>
+<script>
+function clickEvent() {
+  $.get("about.html",function(data){ //初始將homepage.html include div#page
+      $('div#page.container').html(data);
+  })
+}
+</script>

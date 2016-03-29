@@ -4,8 +4,8 @@
 <head>
 <title>長瑒工程公司</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="results, PuLSIF" />
-<meta name="description" content="Results of PuLSIF" />
+<meta name="長瑒工程公司" content="results, PuLSIF" />
+<meta name="長瑒工程公司" content="Results of PuLSIF" />
 <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/table.css" rel="stylesheet" type="text/css" />
@@ -16,13 +16,13 @@
 <!--<link href="css/blue.css" rel="stylesheet" type="text/css" />-->
 <script type="text/javascript">
 $(document).ready(function(){
-$.get("homepage.html",function(data){ //初始將about.html include div#page
+$.get("homepage.html",function(data){ //初始將homepage.html include div#page
     $('div#page.container').html(data);
 }).fail(function() {
     alert('Failed to load the page.'); // or whatever
 });
 
-$.get("menu.html",function(data){ //初始將about.html include div#page
+$.get("menu.html",function(data){
     $('div.menu').html(data);
 }) // or whatever
 });
